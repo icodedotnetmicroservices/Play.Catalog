@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8cywAdLKZ1VLCXOo3cs/2wyQwm6DUC9G3t4KCkvU7K3zSmwJdCrC5AB1+wphQ4HRyqTr1m1qxFq07SQP5iWGwA==",
+  "dgSpecHash": "yPzg6skFoum0oCRkC772Qgrg0oS5C5lT6tud1W9Gu76Xa9syUIpt3nk4CeoJXnIlqqjvHkLyaL6Fvmgbqt0oAw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
+  "projectFilePath": "c:\\Projects\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
