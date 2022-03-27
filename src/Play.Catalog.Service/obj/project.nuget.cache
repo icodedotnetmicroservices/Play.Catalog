@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JJ6k7WgpSsm0ZUIqEakTijD0wIW70cSayUMpyPCeNK36AFZMfUrZTx6EGJB0R9pDqm64yqSJ7mquHEEkOgZBPw==",
+  "dgSpecHash": "Eh2Ay87zJdwyotEuRg8KlsyyEVKLmNyG4LBepB/ye7G7i2043suDuJFnShqbpPscLjAqC0uE6SqtlS161JLQyw==",
   "success": true,
-  "projectFilePath": "c:\\Projects\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
+  "projectFilePath": "C:\\Projects\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13218\\.nuget\\packages\\automatonymous\\5.1.3\\automatonymous.5.1.3.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
