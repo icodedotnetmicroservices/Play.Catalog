@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X2z368hPICDdGZqCtPjrIt9lvgq/+6HT1ybm6E5h+7NMNz4R9H+x6yRLkcGQEhlbYoyT8U/7wKKOGYJ7X/h96A==",
+  "dgSpecHash": "YQbBhYxXjVkWOpDspKVoh/qDpqw4ldfKnSouOLeUjlIuGwF63TukODV3FJyxG6z8hrJG7uLY7hALcrn+ezqe4Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
   "expectedPackageFiles": [
@@ -42,7 +42,7 @@
     "C:\\Users\\13218\\.nuget\\packages\\newid\\3.0.3\\newid.3.0.3.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\13218\\.nuget\\packages\\play.common\\1.0.2\\play.common.1.0.2.nupkg.sha512",
+    "C:\\Users\\13218\\.nuget\\packages\\play.common\\1.0.3\\play.common.1.0.3.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\13218\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",

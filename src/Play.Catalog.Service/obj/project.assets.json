@@ -542,11 +542,12 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Play.Common/1.0.2": {
+      "Play.Common/1.0.3": {
         "type": "package",
         "dependencies": {
           "MassTransit.AspNetCore": "7.3.1",
           "MassTransit.RabbitMQ": "7.2.4",
+          "Microsoft.AspNetCore.Authentication.JWTBearer": "5.0.5",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
@@ -1626,14 +1627,14 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Play.Common/1.0.2": {
-      "sha512": "BdBUhVRUgGfkbEDMx6tUjYV1EAiG/GSriIhbp/MkPnPRNyDM0VKCJGO6n4bnnt/5BEBja+hKPmgg9BaY8ixxfw==",
+    "Play.Common/1.0.3": {
+      "sha512": "yyCcJyEIO/95fBk3AaNf9SLZWrwqn4FK11X5o7SAVh0XHR+PSngK9ZwyxcwCBxxrZd0ZlsU2yuAJxJwWH+JHNw==",
       "type": "package",
-      "path": "play.common/1.0.2",
+      "path": "play.common/1.0.3",
       "files": [
         ".nupkg.metadata",
         "lib/net5.0/Play.Common.dll",
-        "play.common.1.0.2.nupkg.sha512",
+        "play.common.1.0.3.nupkg.sha512",
         "play.common.nuspec"
       ]
     },
@@ -2232,9 +2233,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Authentication.JWTBearer >= 5.0.5",
       "Play.Catalog.Contracts >= 1.0.0",
-      "Play.Common >= 1.0.2",
+      "Play.Common >= 1.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -2282,13 +2282,9 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JWTBearer": {
-            "target": "Package",
-            "version": "[5.0.5, )"
-          },
           "Play.Common": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.0.3, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
