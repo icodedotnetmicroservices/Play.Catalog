@@ -42,6 +42,7 @@ C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MassTransit.d
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MassTransit.AspNetCoreIntegration.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MassTransit.RabbitMqTransport.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -49,6 +50,11 @@ C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Ext
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MongoDB.Bson.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\MongoDB.Driver.dll
@@ -63,6 +69,7 @@ C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\SharpCompress
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\System.Text.Json.dll
 C:\Projects\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
