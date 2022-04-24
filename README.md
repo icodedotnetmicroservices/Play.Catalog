@@ -1,3 +1,3 @@
 # Play.Catalog
 
-Catalog uses by Play Economy services.
+Play Economy Catalog microservice.
