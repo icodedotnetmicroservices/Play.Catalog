@@ -23,6 +23,7 @@ $env:GH_PAT="[PAT HERE]"
 docker build --secret id=GH_OWNER --secret id=GH_PAT -t play.catalog:$version .
 ```
 
+## Run the docker image
 ```powershell
 docker run -it --rm -p 5000:5000 --name catalog -e MongoDbSettings__Host=mongo -e RabbitMqSettings__Host=rabbitmq --network playinfra_default play.catalog:$version
 ```
