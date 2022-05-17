@@ -5,7 +5,7 @@ Play Economy Catalog microservice.
 ## Create and publish package
 
 ```powershell
-$version="1.0.3"
+$version="1.0.4"
 $owner="icodedotnetmicroservices"
 $gh_pat="[PAT HERE]"
 
@@ -37,9 +37,10 @@ docker run -it --rm -p 5000:5000 --name catalog -e MongoDbSettings__ConnectionSt
 az acr login --name $containerregisteryname
 docker push "$containerregisteryname.azurecr.io/play.catalog:$version"
 ```
+
 ## Creating The Pod Managed Identity
 
-```powershell
+````powershell
 $appname = "playeconomy"
 $aksclustername = "aksclusterplayeconomy"
 $namespace="catalog"
@@ -55,4 +56,4 @@ $azurekeyvaultname = "azkeyvaultplayeconomy"
 $IDENTITY_CLIENT_ID=az identity show -g $appname -n $namespace --query clientId -otsv
 az keyvault set-policy -n $azurekeyvaultname --secret-permissions  get list --spn $IDENTITY_CLIENT_ID
 
-```
+````
