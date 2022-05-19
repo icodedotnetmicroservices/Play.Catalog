@@ -40,7 +40,7 @@ docker push "$containerregisteryname.azurecr.io/play.catalog:$version"
 
 ## Creating The Pod Managed Identity
 
-````powershell
+```powershell
 $appname = "playeconomy"
 $aksclustername = "aksclusterplayeconomy"
 $namespace="catalog"
@@ -48,6 +48,7 @@ az identity create --resource-group $appname --name $namespace
 $IDENTITY_RESOURCE_ID=az identity show -g $appname -n $namespace --query id -otsv
 
 az aks pod-identity add --resource-group $appname --cluster-name $aksclustername --namespace $namespace --name $namespace --identity-resource-id $IDENTITY_RESOURCE_ID
+```
 
 ## Granting access to Key Vault Secrets
 
@@ -56,4 +57,10 @@ $azurekeyvaultname = "azkeyvaultplayeconomy"
 $IDENTITY_CLIENT_ID=az identity show -g $appname -n $namespace --query clientId -otsv
 az keyvault set-policy -n $azurekeyvaultname --secret-permissions  get list --spn $IDENTITY_CLIENT_ID
 
-````
+```
+
+## Creating the Kubernetes resources
+
+```powershell
+kubectl apply -f ./kubernetes/catalog.yaml -n $namespace
+```
