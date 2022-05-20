@@ -64,3 +64,12 @@ az keyvault set-policy -n $azurekeyvaultname --secret-permissions  get list --sp
 ```powershell
 kubectl apply -f ./kubernetes/catalog.yaml -n $namespace
 ```
+## Install the Helm Chart
+```powershell
+$helmUser=[guid]::Empty.Guid
+$helmPassword= az acr login --name acr$appname --expose-token --output tsv --query accessToken
+
+$env:HEML_EXPERIMENTAL_OCI=1
+helm registry login "acr$appname.azurecr.io" --username $helmUser --password $helmPassword
+$chartVersion="0.1.0"
+helm upgrade catalog-service oci://acr$appname.azurecr.io/helm/microservice --version $chartVersion -f .\helm\values.yaml -n $namespace --install
