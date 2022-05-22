@@ -76,3 +76,6 @@ helm upgrade catalog-service oci://acr$appname.azurecr.io/helm/microservice --ve
 ```
 ## Required repository secrets for Github workflow
 GH_PAT: Created in Github user profile --> Settings -- Developer Settings --> Personal Access Token
+AZURE_CLIENT_ID: From AAD App Registration
+AZURE_SUBSCRIPTION_ID: From Azure Portal Subscription
+AZURE_TENANT_ID: From ADD properties page
