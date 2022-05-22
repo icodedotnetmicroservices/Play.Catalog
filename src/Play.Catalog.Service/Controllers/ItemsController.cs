@@ -29,7 +29,7 @@ namespace Play.Catalog.Service.Controllers
         // GET /items
         [HttpGet]
         [Authorize(Policies.Read)]
-        public async Task<ActionResult<IEnumerable<ItemDto>>> GetAllItemsAsync()
+        public async Task<ActionResult<IEnumerable<ItemDto>>> GetAsync()
         {
             var items = (await itemsRepository.GetAllAsync())
                         .Select(item => item.AsDto());
@@ -40,22 +40,22 @@ namespace Play.Catalog.Service.Controllers
         // GET /items/{id}
         [HttpGet("{id}")]
         [Authorize(Policies.Read)]
-        public async Task<ActionResult<ItemDto>> GetItemByIDAsync(Guid id)
+        public async Task<ActionResult<ItemDto>> GetByIdAsync(Guid id)
         {
-            var item = (await itemsRepository.GetAsync(id)).AsDto();
+            var item = await itemsRepository.GetAsync(id);
 
             if (item == null)
             {
                 return NotFound();
             }
 
-            return item;
+            return item.AsDto();
         }
 
         // POST /items
         [HttpPost]
         [Authorize(Policies.Write)]
-        public async Task<IActionResult> CreateItemAsync(CreateItemDto createItemDto)
+        public async Task<IActionResult> PostAsync(CreateItemDto createItemDto)
         {
             //Create an item entities out the CreateItemDto
             var item = new Item
@@ -74,13 +74,13 @@ namespace Play.Catalog.Service.Controllers
                 item.Description,
                 item.Price));
 
-            return CreatedAtAction(nameof(GetItemByIDAsync), new { id = item.Id }, item);
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = item.Id }, item);
         }
 
         // PUT /items/{id}
         [HttpPut("{id}")]
         [Authorize(Policies.Write)]
-        public async Task<IActionResult> UpdateItemAsync(Guid id, UpdateItemDto updateItemDto)
+        public async Task<IActionResult> PutAsync(Guid id, UpdateItemDto updateItemDto)
         {
             var existingItem = await itemsRepository.GetAsync(id);
 
@@ -108,7 +108,7 @@ namespace Play.Catalog.Service.Controllers
         // DELETE /items/{id}
         [HttpDelete("{id}")]
         [Authorize(Policies.Write)]
-        public async Task<IActionResult> DeleteItemAsync(Guid id)
+        public async Task<IActionResult> DeleteAsync(Guid id)
         {
             var item = await itemsRepository.GetAsync(id);
 
@@ -117,6 +117,7 @@ namespace Play.Catalog.Service.Controllers
                 return NotFound();
             }
 
+            //TODO: rename this method to RemoveAsync from Play.Common 
             await itemsRepository.DeleteAsync(item.Id);
 
             await publishEndpoint.Publish(new CatalogItemDeleted(id));
